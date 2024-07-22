@@ -36,6 +36,10 @@ body, html {
 .bg-image.about-us-bg::before {
     background-image: url('assets/img/testimonials-bg.jpg') !important;
 }
+.bg-image.contact-us-bg::before {
+    background-image: url('assets/img/services.jpg') !important;
+    filter: brightness(0.2);
+}
 .navbar {
     display: flex;
     justify-content: space-between;
