@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/favicon/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - You</title>
+</head>
+<body>
+    <div class="bg-image about-us-bg">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/youwhite.png" alt="You Logo">
+                </a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <div class="dropdown">
+                    <a href="" class="dropdown-toggle">Departments <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#">Service 1</a>
+                        <a href="#">Service 2</a>
+                        <a href="#">Service 3</a>
+                    </div>
+                </div>
+                <a href="#workshops">Workshops</a>
+                <a href="#meet-the-students">Meet The Students</a>
+                <div class="dropdown">
+                    <a href="" class="dropdown-toggle nav-active">Let's Connect <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="contact-us.html" class="nav-active">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lets get in touch.</p>
+        </div>
+        <div class="contact-form">
+            <form action="mailto:marc.bouhaydar@hotmail.com" method="post" enctype="text/plain" id="contactForm">
+                <div class="contact-inline">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span>*</span></label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name <span>*</span></label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="contact-inline">
+                    <div class="form-group">
+                        <label for="age">Age <span>*</span></label>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneCountry">Phone <span>*</span></label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="instagram">Instagram</label>
+                    <input type="text" id="instagram" name="instagram">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message <span>*</span></label>
+                    <textarea id="message" name="message" placeholder="Write Your Message Here" required></textarea>
+                </div>
+                <button onclick="sendMail(); return false">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="JavaScript/index.js"></script>

@@ -70,3 +70,28 @@ teamContainer.addEventListener('mouseenter', stopAutoScroll);
 teamContainer.addEventListener('mouseleave', startAutoScroll);
 
 startAutoScroll();
+
+
+// Contact form
+function sendMail() {
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var age = document.getElementById("age").value;
+  var phoneNumber = document.getElementById("phoneNumber").value;
+  var email = document.getElementById("email").value;
+  var instagram = document.getElementById("instagram").value;
+  var message = document.getElementById("message").value;  
+
+  var body = "Name: " + firstName + " " + lastName + "\n"
+    + "Age: " + age + "\n"
+    + "Phone Number: " + phoneNumber + "\n"
+    + "Email: " + email + "\n"
+    + "Instagram: " + instagram + "\n"
+    + "Message: " + message;
+
+  var link = "mailto:marcbouhaidar8@gmail.com"
+      + "?cc="
+      + "&body=" + body;
+
+  window.location.href = link;
+}
