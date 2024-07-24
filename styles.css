@@ -485,3 +485,31 @@ button:hover {
         padding: 1rem;
     }
 }
+
+/* Workshops */
+.workshops-content span{
+    background: lightgray;
+    color: black;
+    padding: 0.2rem 0rem; 
+    font-style: italic;
+}
+.workshops-content .vice {
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.workshops-content .versa {
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.workshops-content .flex-container{
+    display: flex;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .workshops-content .flex-container{
+        flex-direction: column;
+    }
+}
