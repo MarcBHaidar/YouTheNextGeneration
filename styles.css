@@ -40,6 +40,10 @@ body, html {
     background-image: url('assets/img/services.jpg') !important;
     filter: brightness(0.2);
 }
+.bg-image.content-creation-agency-bg::before {
+    background-image: url('assets/img/content-creation.jpg') !important;
+    filter: brightness(0.3) grayscale(1);
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -430,5 +434,52 @@ button:hover {
     }
     .contact-inline {
         flex-direction: column;
+    }
+}
+
+/* Content Creation Agency */
+
+.content-creation {
+    margin-top: 2rem !important;
+    text-align: center;
+}
+.cca-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 5rem 17%;
+    padding: 2rem;
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: larger;
+}
+.book-session-button {
+    margin-top: 2rem;
+    width: auto;
+    background: lightgray;
+    padding: 0.5rem 4rem;
+    border-radius: 5rem;
+}
+.book-session-button a {
+    color: black;
+    text-decoration: none;
+}
+.book-session-button:hover a{
+    color: white;
+}
+@media (max-width: 600px) {
+    .content-creation {
+        margin-bottom: 0 !important;
+    }
+    .cca-content {
+        width: 90%;
+        margin: 3rem auto;
+        padding: 1rem;
     }
 }
