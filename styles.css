@@ -174,11 +174,13 @@ body, html {
 
 /* About Us */
 .about-container {
-    width: 100%;
-    margin-top: 3rem;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     padding: 2rem 0;
+    width: 90%;
+    margin: 3rem auto;
+    border: 1px solid white;
+    border-radius: 1rem;
 }
 .about-content {
     margin: 10rem 6% auto 6% !important;
@@ -211,7 +213,7 @@ body, html {
     color: white;
 }
 .about-container .general-about {
-    margin: 5rem 6% auto 6% !important;
+    margin: 1rem 6% auto 6% !important;
     text-align: justify;
     line-height: 2rem;
 }
@@ -269,7 +271,7 @@ body, html {
         padding: 0 2rem 3rem 2rem;
     }
     .about-content h2 {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .about-objective {
         text-align: center;
@@ -368,10 +370,12 @@ body, html {
 /* Contact Us */
 
 .contact-form {
-    background: rgb(100 100 100 / 80%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     padding: 20px;
     margin: 100px 30%;
-    border-radius: 10px;
+    border: 1px solid white;
+    border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
