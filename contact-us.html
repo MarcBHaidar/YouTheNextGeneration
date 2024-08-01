@@ -27,13 +27,13 @@
                 <div class="dropdown">
                     <a href="" class="dropdown-toggle">Departments <i class="fa fa-angle-down"></i></a>
                     <div class="dropdown-menu">
-                        <a href="content-creation-agency.html">Content creation Agency</a>
                         <a href="workshops.html">Workshops</a>
                         <a href="private-sessions.html">Private Sessions</a>
+                        <a href="content-creation-agency.html">Content creation Agency</a>
                     </div>
                 </div>
-                <a href="#workshops">Workshops</a>
-                <a href="#meet-the-students">Meet The Students</a>
+                <a href="workshop.html">Workshops</a>
+                <a href="meet-the-team.html">Meet The Team</a>
                 <div class="dropdown">
                     <a href="" class="dropdown-toggle nav-active">Let's Connect <i class="fa fa-angle-down"></i></a>
                     <div class="dropdown-menu">
@@ -44,10 +44,10 @@
         </div>
         <div class="content">
             <h2>Contact Us</h2>
-            <p>Lets get in touch.</p>
+            <p>Let's get in touch.</p>
         </div>
         <div class="contact-form">
-            <form action="mailto:marc.bouhaydar@hotmail.com" method="post" enctype="text/plain" id="contactForm">
+            <form id="contactForm">
                 <div class="contact-inline">
                     <div class="form-group">
                         <label for="firstName">First Name <span>*</span></label>
@@ -61,11 +61,11 @@
                 <div class="contact-inline">
                     <div class="form-group">
                         <label for="age">Age <span>*</span></label>
-                        <input type="number" id="age" name="age" required>
+                        <input type="number" id="age" name="age" min="0" required>
                     </div>
                     <div class="form-group">
-                        <label for="phoneCountry">Phone <span>*</span></label>
-                        <input type="text" id="phoneNumber" name="phoneNumber" required>
+                        <label for="phoneNumber">Phone <span>*</span></label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" title="Please enter a valid phone number with at least 10 digits." required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -77,10 +77,10 @@
                     <input type="text" id="instagram" name="instagram">
                 </div>
                 <div class="form-group">
-                    <label for="message">Message <span>*</span></label>
+                    <label for="message">Course Applying To <span>*</span></label>
                     <textarea id="message" name="message" placeholder="Write Your Message Here" required></textarea>
                 </div>
-                <button onclick="sendMail(); return false" class="book-session-button" style="width: 100%;color: black;">Send</button>
+                <button type="button" onclick="sendMail()" class="book-session-button" style="width: 100%; color: black;">Send</button>
             </form>
         </div>
     </div>
@@ -88,3 +88,48 @@
 </html>
 
 <script src="JavaScript/index.js"></script>
+<script>
+function sendMail() {
+    // Get form fields
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var age = document.getElementById("age").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
+    var email = document.getElementById("email").value;
+    var instagram = document.getElementById("instagram").value;
+    var message = document.getElementById("message").value;  
+  
+    // Validate fields
+    if (!firstName || !lastName || !age || !phoneNumber || !email || !message) {
+        alert("Please fill in all required fields.");
+        return; // Prevent sending the email
+    }
+
+    if (isNaN(age) || age <= 0) {
+        alert("Please enter a valid positive number for age.");
+        return; // Prevent sending the email
+    }
+
+    var phonePattern = /^[0-9]{10,}$/;
+    if (!phonePattern.test(phoneNumber)) {
+        alert("Please enter a valid phone number with at least 10 digits.");
+        return; // Prevent sending the email
+    }
+  
+    // Create email body
+    var body = "Name: " + firstName + " " + lastName + "%0A"
+      + "Age: " + age + "%0A"
+      + "Phone Number: " + phoneNumber + "%0A"
+      + "Email: " + email + "%0A"
+      + "Instagram: " + instagram + "%0A"
+      + "Message: " + message;
+  
+    // Create mailto link
+    var link = "mailto:marcbouhaidar8@gmail.com"
+        + "?cc="
+        + "&body=" + body;
+  
+    // Open email client
+    window.location.href = link;
+}
+</script>

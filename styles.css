@@ -1,3 +1,10 @@
+:root {
+    --white-beige: #F6F5EC;
+    --peach-cream: #EFE7DA;
+    --chalk-beige: #E1DACA;
+    --neutral: #C1B6A4;
+    --brandy-rose: #B29079;
+}
 * {
     margin: 0;
     padding: 0;
@@ -26,12 +33,16 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/img/hero-bg.jpg');
+    background-image: url('assets/img/YouBackground.jpeg');
     filter: brightness(0.5);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+}
+.bg-image.main-page-bg::before {
+    background-image: url('assets/img/YouBackground.jpeg') !important;
+    filter: brightness(1);
 }
 .bg-image.about-us-bg::before {
     background-image: url('assets/img/testimonials-bg.jpg') !important;
@@ -62,7 +73,7 @@ body, html {
 .navbar .logo img {
     height: 5rem;
     width: auto;
-    color: white;
+    color: var(--white-beige);
 }
 .navbar .links {
     display: flex;
@@ -71,8 +82,8 @@ body, html {
 }
 .navbar .links a {
     text-decoration: none;
-    color: white;
-    font-size: 20px;
+    color: var(--brandy-rose);
+    font-size: 2rem;
     position: relative;
 }
 .hamburger {
@@ -84,7 +95,7 @@ body, html {
 .hamburger div {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--brandy-rose);
     margin: 4px;
 }
 .hamburger.active div:nth-child(1) {
@@ -98,7 +109,7 @@ body, html {
 }
 .content {
     text-align: center;
-    color: white;
+    color: var(--white-beige);
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -115,21 +126,26 @@ body, html {
 }
 .footer a {
     margin: 0 10px;
-    color: white;
+    color: var(--white-beige);
     font-size: 20px;
     text-decoration: none;
 }
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: lightgray;
+    background-color: var(--white-beige);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin-top: 1rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 50%;
+    text-align: center;
 }
 .dropdown-menu a {
-    color: black !important;
+    color: var(--brandy-rose) !important;
+    font-size: 1.5rem !important;
     padding: 10px 16px;
     text-decoration: none;
     display: block;
@@ -160,7 +176,7 @@ body, html {
         bottom: 0;
         height: 100%;
         width: 100%;
-        background-color: grey;
+        background-color: var(--white-beige);
         padding: 20px;
         z-index: 10;
     }
@@ -179,11 +195,27 @@ body, html {
     padding: 2rem 0;
     width: 90%;
     margin: 3rem auto;
-    border: 1px solid white;
+    border: 1px solid var(--white-beige);
     border-radius: 1rem;
 }
+.about-header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+.about-header h1{
+    font-size: 3rem;
+    color: var(--brandy-rose);
+}
+.about-header p{
+    color: var(--neutral);
+}
 .about-content {
-    margin: 10rem 6% auto 6% !important;
+    margin: 3rem auto !important;
     text-align: justify;
     font-stretch: ultra-expanded;
 }
@@ -210,7 +242,7 @@ body, html {
     font-size: 2rem;
 }
 .about-container p {
-    color: white;
+    color: var(--white-beige);
 }
 .about-container .general-about {
     margin: 1rem 6% auto 6% !important;
@@ -244,17 +276,17 @@ body, html {
     display: flex;
 }
 .founder-about {
-    background-color: lightgray;
+    background-color: var(--white-beige);
 }
 .founder-about h1 {
     font-size: 3rem;
     padding: 2rem;
-    color: grey;
+    color: var(--brandy-rose);
     letter-spacing: 1rem;
 }
 .founder-about p {
     padding: 0 2rem;
-    color: grey;
+    color: var(--brandy-rose);
     line-height: 2rem;
 }
 @media (max-width: 768px) {
@@ -271,7 +303,7 @@ body, html {
         padding: 0 2rem 3rem 2rem;
     }
     .about-content h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .about-objective {
         text-align: center;
@@ -290,7 +322,7 @@ body, html {
     align-items: center;
     justify-content: space-evenly;
     padding: 5rem 0 10rem 0;
-    background-color: lightgray;
+    background-color: var(--white-beige);
 }
 
 .team-container {
@@ -374,7 +406,7 @@ body, html {
     -webkit-backdrop-filter: blur(5px);
     padding: 20px;
     margin: 100px 30%;
-    border: 1px solid white;
+    border: 1px solid var(--white-beige);
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -387,7 +419,7 @@ body, html {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: white;
+    color: var(--white-beige);
 }
 
 .form-group input,
@@ -456,10 +488,10 @@ button:hover {
     width: 70%;
     margin: 5rem 17%;
     padding: 2rem;
-    border: 1px solid white;
+    border: 1px solid var(--white-beige);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    color: white;
+    color: var(--white-beige);
     border-radius: 1rem;
     text-align: center;
     line-height: 2rem;
@@ -477,7 +509,7 @@ button:hover {
     text-decoration: none;
 }
 .book-session-button:hover a{
-    color: white;
+    color: var(--white-beige);
 }
 @media (max-width: 600px) {
     .content-creation {
@@ -516,4 +548,40 @@ button:hover {
     .workshops-content .flex-container{
         flex-direction: column;
     }
+}
+
+/* Meet the team */
+.meetTheTeam-content {
+    margin: 3rem auto !important;
+}
+@media (max-width: 600px) {
+    .arrow {
+        display: none;
+    }
+}
+
+/* Coming soon  */
+.coming-soon {
+    position: relative;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.coming-soon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('assets/img/YouBackground.jpeg');
+    filter: brightness(0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
