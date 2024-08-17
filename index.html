@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/favicon/favicon.ico" rel="icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>You The Next Generation</title>
 </head>
@@ -41,13 +42,19 @@
                     </div>
                 </div>
             </div>
-        <!-- </div>
-        <div class="content">
-            <h2>YOU THE NEXT GENERATION</h2>
-            <p>BELIEVE IT, FEEL IT, LIVE IT</p>
-        </div> -->
+    </div>
+    <div class="social-links">
+        <a href="https://www.facebook.com/your-profile" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/youbeyrouth?igsh=c253MHZud3N5eGo5" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
     </div>
 </body>
 </html>
-
+<script>
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.hamburger, .links, .links *')) {
+        toggleMenu();
+      }
+    });
+</script>
 <script src="JavaScript/index.js"></script>
