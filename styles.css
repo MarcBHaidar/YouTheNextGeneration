@@ -259,7 +259,7 @@ body, html {
 .about-objective h2 {
     font-stretch: ultra-expanded;
     font-size: 3rem;
-    font-family: 'Bodini Moda', serif;
+    font-family: serif;
     color: var(--brandy-rose);
 }
 .about-container p {
