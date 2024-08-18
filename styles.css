@@ -294,6 +294,8 @@ body, html {
     display: flex;
 }
 .founder-img {
+    background: linear-gradient(var(--brandy-rose), var(--text-color));
+    border-radius: 50% 50% 0 0;
     display: flex;
 }
 .founder-about {
@@ -325,7 +327,9 @@ body, html {
         padding: 0 2rem 3rem 2rem;
     }
     .about-content h2 {
-        font-size: 1.5rem;
+        font-family: 'Bodini Moda', serif;
+        font-style: italic;
+        font-size: 1.75rem;
     }
     .about-objective {
         text-align: center;
