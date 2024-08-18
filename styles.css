@@ -301,7 +301,7 @@ body, html {
     display: flex;
 }
 .founder-about {
-    background-color: var(--white-beige);
+    background-color: var(--homepage-bg);
 }
 .founder-about h1 {
     font-size: 3rem;
@@ -350,7 +350,7 @@ body, html {
     align-items: center;
     justify-content: space-evenly;
     padding: 5rem 0 10rem 0;
-    background-color: var(--white-beige);
+    background-color: var(--homepage-bg);
 }
 
 .team-container {
