@@ -259,9 +259,11 @@ body, html {
 .about-objective h2 {
     font-stretch: ultra-expanded;
     font-size: 3rem;
+    font-family: 'Bodini Moda', serif;
     color: var(--brandy-rose);
 }
 .about-container p {
+    font-weight: normal;
     color: var(--text-color);
 }
 .about-container .general-about {
@@ -294,7 +296,7 @@ body, html {
 }
 .founder-img {
     /* background: linear-gradient(var(--brandy-rose), var(--text-color)); */
-    background: -webkit-linear-gradient(var(--brandy-rose), var(--text-color)); /* Safari 5.1+, Chrome 10+ */  
+    background: -webkit-linear-gradient(var(--brandy-rose), var(--text-color));
     border-radius: 50% 50% 0 0;
     display: flex;
 }
