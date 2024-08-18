@@ -258,7 +258,6 @@ body, html {
 }
 .about-objective h2 {
     font-stretch: ultra-expanded;
-    font-family: 'Bodini Moda', serif;
     font-size: 3rem;
     color: var(--brandy-rose);
 }
@@ -327,7 +326,7 @@ body, html {
         padding: 0 2rem 3rem 2rem;
     }
     .about-content h2 {
-        font-family: 'Bodini Moda', serif;
+        font-family: none;
         font-style: italic;
         font-size: 1.75rem;
     }
