@@ -45,7 +45,7 @@ body, html {
 }
 .bg-image.main-page-bg::before {
     background-size: contain !important;
-    filter: brightness(1);
+    background-color: var(--homepage-bg) !important;
 }
 .bg-image.about-us-bg::before {
     background-color: var(--homepage-bg) !important;
