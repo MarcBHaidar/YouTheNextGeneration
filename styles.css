@@ -44,7 +44,8 @@ body, html {
     z-index: -1;
 }
 .bg-image.main-page-bg::before {
-    background-image: url('assets/img/YouBackground.jpeg') !important;
+    background-image: url('assets/imG/YOU-THE-NEXTGENERATION-LOGO.png') !important;
+    background-size: contain !important;
     filter: brightness(1);
 }
 .bg-image.about-us-bg::before {
