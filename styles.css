@@ -36,7 +36,7 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/img/YouBackground.jpeg');
+    background-image: url('assets/img/YOU-THE-NEXTGENERATION-LOGO.png');
     /* filter: brightness(0.5); */
     background-position: center;
     background-repeat: no-repeat;
@@ -44,7 +44,6 @@ body, html {
     z-index: -1;
 }
 .bg-image.main-page-bg::before {
-    background-image: url('assets/imG/YOU-THE-NEXTGENERATION-LOGO.png') !important;
     background-size: contain !important;
     filter: brightness(1);
 }
