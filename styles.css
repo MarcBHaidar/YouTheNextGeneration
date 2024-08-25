@@ -295,9 +295,7 @@ body, html {
     display: flex;
 }
 .founder-img {
-    /* background: linear-gradient(var(--brandy-rose), var(--text-color)); */
-    background: -webkit-linear-gradient(var(--brandy-rose), var(--text-color));
-    border-radius: 50% 50% 0 0;
+    background: -webkit-linear-gradient(var(--homepage-bg), var(--text-color), var(--homepage-bg));
     display: flex;
 }
 .founder-about {
@@ -320,13 +318,13 @@ body, html {
         flex-direction: column;
     }
     .founder img {
-        width: 100%;
         height: auto;
-        object-fit: cover;
-        max-width: 100%;
+        object-fit: contain;
+        rotate: 90deg;
+        margin-left: -4rem;
     }
     .founder-about p {
-        padding: 0 2rem 3rem 2rem;
+        padding: 2rem 2rem 3rem 2rem;
     }
     .about-content h2 {
         font-family: none;
@@ -585,7 +583,14 @@ button:hover {
 
 /* Meet the team */
 .meetTheTeam-content {
-    margin: 3rem auto !important;
+    margin: 3rem auto -2rem auto !important;
+    z-index: 1;
+}
+.meetTheTeam-content h2 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    font-style: normal;
 }
 @media (max-width: 600px) {
     .arrow {
