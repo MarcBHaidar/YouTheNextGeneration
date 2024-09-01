@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Rosemary Pontiac';
+    src: url('fonts/RosemaryPontiac.ttf') format('truetype'); /* Adjust path and format as necessary */
+  }
 :root {
     --white-beige: #F6F5EC;
     --homepage-bg: #EFEAE6;
@@ -14,7 +18,7 @@
 }
 body, html {
     height: 100%;
-    font-family: "montserrat", sans-serif;
+    font-family: 'Rosemary Pontiac', sans-serif;
     font-weight: 100;
     text-wrap: pretty !important;
 }
@@ -335,8 +339,8 @@ body, html {
         padding: 2rem 2rem 3rem 2rem;
     }
     .about-content h2 {
-        font-family: none;
-        font-style: italic;
+        /* font-family: none; */
+        /* font-style: italic; */
         font-size: 1.75rem;
     }
     .about-objective {
@@ -721,18 +725,18 @@ button:hover {
 .swiper-container {
     width: 100%;
     padding: 20px 0 30px 1rem;
-    overflow: hidden; /* Hide the overflow if needed */
+    overflow: hidden;
   }
   
   .swiper-slide {
     display: flex;
     justify-content: center;
-    transition: transform 0.3s ease; /* Smooth slide transition */
+    transition: transform 0.3s ease;
   }
   
   .team-card {
-    width: 100%; /* Slightly less than 100% to show the next slide */
-    max-width: 300px; /* Set a max-width to control the size */
+    width: 100%;
+    max-width: 100%;
     text-align: center;
     border: 1px solid #e0e0e0;
     border-radius: 8px;

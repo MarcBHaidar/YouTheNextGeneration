@@ -66,7 +66,7 @@ function scrollRight() {
 //     clearInterval(autoScroll);
 // }
 
-teamContainer.addEventListener('mouseenter', stopAutoScroll);
-teamContainer.addEventListener('mouseleave', startAutoScroll);
+// teamContainer.addEventListener('mouseenter', stopAutoScroll);
+// teamContainer.addEventListener('mouseleave', startAutoScroll);
 
-startAutoScroll();
+// startAutoScroll();

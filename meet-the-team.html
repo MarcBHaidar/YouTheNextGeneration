@@ -101,7 +101,7 @@
                     class="team-photo"
                   />
                   <h3>Daniel Abou Salameh</h3>
-                  <p>Architect</p>
+                  <p style="font-weight: 600;">Architect</p>
                   <p>I’m Daniel Abou Salameh, an architect with a creative eye for videography. I specialize in crafting and editing videos that capture our innovative spirit in dynamic ways. I handle content creation for modeling agencies, like Velvet Management, as well as for sports such as Lebanese basketball coaches training content and the lebanese car rally events. My work also spans commercials for well known restaurants, shops, and various businesses</p>
                 </div>
               </div>
@@ -115,23 +115,23 @@
 </body>
 </html>
 <script>
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1.2, // Shows a bit of the next slide
-    spaceBetween: 30, // Adjust space between slides
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1.1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
     },
-    breakpoints: {
-      640: {
-        slidesPerView: 1.5, // On larger screens, show more of the next slide
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: 2.2, // More visible slides on desktop
-        spaceBetween: 30,
-      },
+    1024: {
+      slidesPerView: 2.2,
+      spaceBetween: 30,
     },
-  });
+  },
+});
 </script>
 <script src="JavaScript/index.js"></script>
