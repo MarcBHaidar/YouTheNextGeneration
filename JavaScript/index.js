@@ -45,8 +45,8 @@ window.addEventListener('scroll', () => {
   });
 });
 
-const teamContainer = document.getElementById('teamContainer');
-let autoScroll;
+// const teamContainer = document.getElementById('teamContainer');
+// let autoScroll;
 
 function scrollLeft() {
     const width = teamContainer.clientWidth;
@@ -58,13 +58,13 @@ function scrollRight() {
     teamContainer.scrollBy({ left: width, behavior: 'smooth' });
 }
 
-function startAutoScroll() {
-    autoScroll = setInterval(scrollRight, 5000);
-}
+// function startAutoScroll() {
+//     autoScroll = setInterval(scrollRight, 5000);
+// }
 
-function stopAutoScroll() {
-    clearInterval(autoScroll);
-}
+// function stopAutoScroll() {
+//     clearInterval(autoScroll);
+// }
 
 teamContainer.addEventListener('mouseenter', stopAutoScroll);
 teamContainer.addEventListener('mouseleave', startAutoScroll);
