@@ -757,3 +757,8 @@ button:hover {
   .swiper-pagination-bullet-active {
     background: var(--brandy-rose) !important;
   }
+  .member-position {
+    font-weight: 600;
+    color: var(--brandy-rose);
+    font-style: italic;
+  }
